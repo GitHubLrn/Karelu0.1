@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kmust.Karelu.mapper.CommentMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.kmust.Karelu.entity.Comment">
+        <id column="commentid" property="commentid" />
+        <result column="noteid" property="noteid" />
+        <result column="userid" property="userid" />
+        <result column="createdate" property="createdate" />
+        <result column="commentthing" property="commentthing" />
+        <result column="fatherid" property="fatherid" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        commentid, noteid, userid, createdate, commentthing, fatherid
+    </sql>
+
+</mapper>

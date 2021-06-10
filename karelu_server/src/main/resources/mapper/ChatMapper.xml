@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kmust.Karelu.mapper.ChatMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.kmust.Karelu.entity.Chat">
+        <id column="chatid" property="chatid" />
+        <result column="usersentid" property="usersentid" />
+        <result column="usergetid" property="usergetid" />
+        <result column="createTime" property="createTime" />
+        <result column="bedone" property="bedone" />
+        <result column="chatthing" property="chatthing" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        chatid, usersentid, usergetid, createTime, bedone, chatthing
+    </sql>
+
+</mapper>
